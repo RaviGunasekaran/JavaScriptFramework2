@@ -1,0 +1,45 @@
+{
+  "uid" : "eeb13325307aef02",
+  "name" : "should return a 200 response",
+  "fullName" : "User Test.should return a 200 response",
+  "historyId" : "d44b7cc9d3b91e0d8e07318b5fb0a2fe",
+  "time" : {
+    "start" : 1539852911291,
+    "stop" : 1539852912809,
+    "duration" : 1518
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "User Test"
+  }, {
+    "name" : "testClass",
+    "value" : "User Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "should return a 200 response"
+  }, {
+    "name" : "package",
+    "value" : "User Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eeb13325307aef02.json",
+  "parameterValues" : [ ]
+}

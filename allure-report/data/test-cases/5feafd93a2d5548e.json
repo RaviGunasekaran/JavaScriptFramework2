@@ -1,0 +1,45 @@
+{
+  "uid" : "5feafd93a2d5548e",
+  "name" : "This is second test",
+  "fullName" : "Array #indexOf().This is second test",
+  "historyId" : "6a475c570d8698248238ba904ebb1558",
+  "time" : {
+    "start" : 1539852914203,
+    "stop" : 1539852914207,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Array #indexOf()"
+  }, {
+    "name" : "testClass",
+    "value" : "Array #indexOf()"
+  }, {
+    "name" : "testMethod",
+    "value" : "This is second test"
+  }, {
+    "name" : "package",
+    "value" : "Array #indexOf()"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5feafd93a2d5548e.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539867468606' stop='1539867490076'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539867468606' status='broken' stop='1539867490076'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539867468611' status='passed' stop='1539867488853'>
+                    <name>POST /wd/hub/session/1c01606e2af307e383ce7a2cc1dd857b/url</name>
+                    <title>POST /wd/hub/session/1c01606e2af307e383ce7a2cc1dd857b/url</title>
+                    <attachments>
+                        <attachment title='Request' source='9717b540-fa43-4e63-813f-67fc90cfb12b-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='4438f3ad-f6cf-4cad-a8ee-fa947dac7a03-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539867488858' status='passed' stop='1539867490062'>
+                    <name>POST /wd/hub/session/1c01606e2af307e383ce7a2cc1dd857b/url</name>
+                    <title>POST /wd/hub/session/1c01606e2af307e383ce7a2cc1dd857b/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ba48266f-fcc2-4467-ba29-4f4635942bdd-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='4d00a2f2-1a3a-42e5-a737-e988247390a1-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539867490063' status='passed' stop='1539867490075'>
+                    <name>GET /wd/hub/session/1c01606e2af307e383ce7a2cc1dd857b/title</name>
+                    <title>GET /wd/hub/session/1c01606e2af307e383ce7a2cc1dd857b/title</title>
+                    <attachments>
+                        <attachment title='Response' source='1d6c12da-0494-4b24-91e2-3260d8871132-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>$userNameTextBox is not defined</message>
+                <stack-trace>ReferenceError: $userNameTextBox is not defined
+                    at Object.enterValueInUserNameTextBox (c:\mochatests\Framework\Pages\KoreLoginPage.js:46:17)
+                    at Context.&lt;anonymous> (c:\mochatests\WebTests\BATS\KoreLoginTest.js:11:19)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (c:\mochatests\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (c:\mochatests\node_modules\wdio-sync\build\index.js:588:12)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

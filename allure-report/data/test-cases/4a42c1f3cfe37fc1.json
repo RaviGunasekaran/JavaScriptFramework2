@@ -1,0 +1,45 @@
+{
+  "uid" : "4a42c1f3cfe37fc1",
+  "name" : "should be an object with keys and values",
+  "fullName" : ".should be an object with keys and values",
+  "historyId" : "34809cb5278ff2b12c191bb43524621d",
+  "time" : {
+    "start" : 1539852905177,
+    "stop" : 1539852907250,
+    "duration" : 2073
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : ""
+  }, {
+    "name" : "testMethod",
+    "value" : "should be an object with keys and values"
+  }, {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4a42c1f3cfe37fc1.json",
+  "parameterValues" : [ ]
+}

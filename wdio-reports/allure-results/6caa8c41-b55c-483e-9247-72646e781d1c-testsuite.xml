@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539872659726' stop='1539872659730'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539872659726' status='broken' stop='1539872659729'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>koreLoginPage.getRegressionURL is not a function</message>
+                <stack-trace>TypeError: koreLoginPage.getRegressionURL is not a function
+                    at Context.&lt;anonymous> (c:\mochatests\WebTests\BATS\KoreLoginTest.js:10:19)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (c:\mochatests\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (c:\mochatests\node_modules\wdio-sync\build\index.js:588:12)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,45 @@
+{
+  "uid" : "c30ed341883acf7a",
+  "name" : "Connect to DB and Get Data",
+  "fullName" : "DB Connection using windows AUTHENTICATION - Test.Connect to DB and Get Data",
+  "historyId" : "27cbf055bc80db0e1e34425edecfa89",
+  "time" : {
+    "start" : 1539852907250,
+    "stop" : 1539852911274,
+    "duration" : 4024
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "DB Connection using windows AUTHENTICATION - Test"
+  }, {
+    "name" : "testClass",
+    "value" : "DB Connection using windows AUTHENTICATION - Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Connect to DB and Get Data"
+  }, {
+    "name" : "package",
+    "value" : "DB Connection using windows AUTHENTICATION - Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c30ed341883acf7a.json",
+  "parameterValues" : [ ]
+}

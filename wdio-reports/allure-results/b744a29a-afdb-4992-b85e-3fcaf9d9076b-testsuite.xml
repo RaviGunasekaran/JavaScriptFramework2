@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539882027929' stop='1539882089156'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539882027929' status='broken' stop='1539882089133'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539882089126' status='broken' stop='1539882089133'>
+                    <name>POST /wd/hub/session/5a1bca315032e837504a9d390073811a/url</name>
+                    <title>POST /wd/hub/session/5a1bca315032e837504a9d390073811a/url</title>
+                    <attachments>
+                        <attachment title='Request' source='aa93b1d9-af9e-4045-9c97-b8d251d4e21e-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (c:\mochatests\WebTests\BATS\KoreLoginTest.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (c:\mochatests\WebTests\BATS\KoreLoginTest.js)
+                    at Test.Runnable._timeoutError (c:\mochatests\node_modules\mocha\lib\runnable.js:440:10)
+                    at Timeout.&lt;anonymous> (c:\mochatests\node_modules\mocha\lib\runnable.js:251:24)
+                    at ontimeout (timers.js:498:11)
+                    at tryOnTimeout (timers.js:323:5)
+                    at Timer.listOnTimeout (timers.js:290:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

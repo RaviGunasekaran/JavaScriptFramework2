@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539869739773' stop='1539869765290'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539869739773' status='broken' stop='1539869765288'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539869739778' status='passed' stop='1539869753959'>
+                    <name>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/url</name>
+                    <title>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c2178e6a-1176-4b47-aa2b-36f080064c6a-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='6c252222-2dfd-4bb6-8768-96c24d523f77-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869753962' status='passed' stop='1539869755116'>
+                    <name>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/url</name>
+                    <title>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7a735d24-a039-4975-8560-f49ebb014af1-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='14a353e7-462d-40cc-a7a5-5241da21f7ac-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869755118' status='passed' stop='1539869755128'>
+                    <name>GET /wd/hub/session/40908486fd4e2ea2793c0548de80d734/title</name>
+                    <title>GET /wd/hub/session/40908486fd4e2ea2793c0548de80d734/title</title>
+                    <attachments>
+                        <attachment title='Response' source='119e98c4-69ca-42e1-98e8-2383284a67d8-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869755129' status='passed' stop='1539869755151'>
+                    <name>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/elements</name>
+                    <title>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='46bba24e-5c00-4e51-9233-1498add49e7b-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='24d5f324-890b-4c40-9255-a44d1819b3df-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869755151' status='passed' stop='1539869755200'>
+                    <name>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/element/0.6401519542133822-1/clear</name>
+                    <title>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/element/0.6401519542133822-1/clear</title>
+                    <attachments>
+                        <attachment title='Response' source='18e6eaa9-9844-4bc1-b656-4545feb3cf76-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869755200' status='passed' stop='1539869755272'>
+                    <name>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/element/0.6401519542133822-1/value</name>
+                    <title>POST /wd/hub/session/40908486fd4e2ea2793c0548de80d734/element/0.6401519542133822-1/value</title>
+                    <attachments>
+                        <attachment title='Request' source='4b9a2279-75e9-45e3-8ec9-432d655b5c93-attachment.json' type='application/json' size='179'/>
+                        <attachment title='Response' source='34f8bcb4-637d-45c8-a281-be2394362839-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.userNameTextBox.clearElement is not a function</message>
+                <stack-trace>TypeError: this.userNameTextBox.clearElement is not a function
+                    at Object.enterValueInUserNameTextBox (c:\mochatests\Framework\Pages\KoreLoginPage.js:45:24)
+                    at Context.&lt;anonymous> (c:\mochatests\WebTests\BATS\KoreLoginTest.js:12:19)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (c:\mochatests\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (c:\mochatests\node_modules\wdio-sync\build\index.js:588:12)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

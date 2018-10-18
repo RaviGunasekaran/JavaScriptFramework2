@@ -1,0 +1,8 @@
+"Status","Name","Duration in ms","Description"
+"passed","DB Connection using windows AUTHENTICATION - Test.Connect to DB and Get Data","4024",""
+"passed","Array #indexOf().This is second test","4",""
+"passed",".should be an object with keys and values","2073",""
+"passed","User Test.should return a 200 response","1518",""
+"passed","Array #indexOf().should return -1 when the value is not present","2",""
+"broken","webdriver.io page.should have the right title - the fancy generator way","42",""
+"passed","Koala POST - Test.Post and Create Throwaway Account","1380",""

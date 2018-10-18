@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539868004497' stop='1539868024344'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539868004498' status='broken' stop='1539868024342'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539868004501' status='passed' stop='1539868004544'>
+                    <name>POST /wd/hub/session/f23932bcb9f232cc69541c25469e5560/url</name>
+                    <title>POST /wd/hub/session/f23932bcb9f232cc69541c25469e5560/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1e9b52f8-a55b-4868-bd18-f7c785d76837-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='726d9b0b-cb5b-471d-9cc6-5f66c3581bcd-attachment.json' type='application/json' size='584'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539868018164' status='passed' stop='1539868019318'>
+                    <name>POST /wd/hub/session/f23932bcb9f232cc69541c25469e5560/url</name>
+                    <title>POST /wd/hub/session/f23932bcb9f232cc69541c25469e5560/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b3189389-43ee-4101-8172-2fc911252409-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='522ecb2a-e727-4faf-a926-277dd2358867-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539868019319' status='passed' stop='1539868019332'>
+                    <name>GET /wd/hub/session/f23932bcb9f232cc69541c25469e5560/title</name>
+                    <title>GET /wd/hub/session/f23932bcb9f232cc69541c25469e5560/title</title>
+                    <attachments>
+                        <attachment title='Response' source='6949e0a2-7ee5-4708-ac33-0aaabfbdc1f7-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='86310f2b-9d05-413f-94da-bfecdd806095-attachment.json' type='application/json' size='91'/>
+            </attachments>
+            <failure>
+                <message>passwordTextBox is not defined</message>
+                <stack-trace>ReferenceError: passwordTextBox is not defined
+                    at Object.enterValueInPasswordTextBox (c:\mochatests\Framework\Pages\KoreLoginPage.js:58:1)
+                    at Context.&lt;anonymous> (c:\mochatests\WebTests\BATS\KoreLoginTest.js:12:19)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (c:\mochatests\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (c:\mochatests\node_modules\wdio-sync\build\index.js:588:12)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

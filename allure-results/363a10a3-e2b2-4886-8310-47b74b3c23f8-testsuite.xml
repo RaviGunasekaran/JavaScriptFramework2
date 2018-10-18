@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539852907250' stop='1539852911275'>
+    <name>DB Connection using windows AUTHENTICATION - Test</name>
+    <title>DB Connection using windows AUTHENTICATION - Test</title>
+    <test-cases>
+        <test-case start='1539852907250' status='passed' stop='1539852911274'>
+            <name>Connect to DB and Get Data</name>
+            <title>Connect to DB and Get Data</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

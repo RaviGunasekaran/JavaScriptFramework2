@@ -1,0 +1,392 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 7,
+    "passes": 6,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-10-17T10:25:42.819Z",
+    "end": "2018-10-17T10:25:51.084Z",
+    "duration": 8265,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true,
+    "passPercentClass": "warning",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "eeaaa322-712d-4ae2-b15c-4b31848431bd",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [
+      {
+        "title": "\"before each\" hook",
+        "fullTitle": "\"before each\" hook",
+        "timedOut": false,
+        "duration": 3,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "console.log(\"Inside beforeEach Function!!!\");",
+        "err": {},
+        "isRoot": true,
+        "uuid": "65f1947f-f806-480f-a041-3dd5090a7f2a",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "afterHooks": [
+      {
+        "title": "\"after each\" hook for \"should have the right title - the fancy generator way\"",
+        "fullTitle": "\"after each\" hook for \"should have the right title - the fancy generator way\"",
+        "timedOut": false,
+        "duration": 0,
+        "state": "failed",
+        "pass": false,
+        "fail": true,
+        "pending": false,
+        "code": "if (this.currentTest.state == 'failed') {\n\tconsole.log(\"Response body: \" + util.inspect(response.body, {\n\t\tdepth: null,\n\t\tcolors: true\n\t}) + \"\\n\");\n}",
+        "err": {
+          "message": "ReferenceError: util is not defined",
+          "estack": "ReferenceError: util is not defined\n    at Context.<anonymous> (test5_api_get.js:40:35)"
+        },
+        "isRoot": true,
+        "uuid": "d1b67c5a-56e1-4891-8f66-7c92b09251c6",
+        "isHook": true,
+        "skipped": false
+      },
+      {
+        "title": "\"after each\" hook",
+        "fullTitle": "\"after each\" hook",
+        "timedOut": false,
+        "duration": 0,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "if (this.currentTest.state == 'failed') {\n  console.log(\"Response body: \" + util.inspect(response.body,{depth: null, colors: true}) + \"\\n\");\n}",
+        "err": {},
+        "isRoot": true,
+        "uuid": "1dafebde-b78c-4414-af79-9ac4cad21018",
+        "isHook": true,
+        "skipped": false
+      },
+      {
+        "title": "\"after each\" hook",
+        "fullTitle": "\"after each\" hook",
+        "timedOut": false,
+        "duration": 0,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "if (this.currentTest.state == 'failed') {\n  console.log(\"Response body: \" + util.inspect(response.body,{depth: null, colors: true}) + \"\\n\");\n}",
+        "err": {},
+        "isRoot": true,
+        "uuid": "536d2abf-0c70-4cc0-b868-aa4b5d5eeeca",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "tests": [
+      {
+        "title": "should be an object with keys and values",
+        "fullTitle": "should be an object with keys and values",
+        "timedOut": false,
+        "duration": 1555,
+        "state": "passed",
+        "speed": "slow",
+        "pass": true,
+        "fail": false,
+        "pending": false,
+        "code": "this.timeout(15000); //Increase timeout of response.\napi.get('/vgupta:Kabbage')\n\t.set('Accept', 'application/json')\n\t.expect(200)\n\t.expect('Content-Type', 'application/json')\n\t.end(function (err, res) {\n\t\tconsole.log(\"STATUS CODE = \" + res.statusCode);\n\t\tlocation1 = JSON.stringify(res);\n\t\tconsole.log(\"Final Response =\" + location1);\n\t\texpect(res.body).to.have.property(\"username\");\n\t\texpect(res.body).to.have.property(\"password_expiry_warning\");\n\t\tdone();\n\t});",
+        "err": {},
+        "isRoot": true,
+        "uuid": "f3de149c-73a5-4c70-9379-dacb3864878a",
+        "isHook": false,
+        "skipped": false
+      }
+    ],
+    "suites": [
+      {
+        "uuid": "41de6cf1-7d6c-48ba-b44f-e44ae0d8048f",
+        "title": "DB Connection using windows AUTHENTICATION - Test",
+        "fullFile": "c:\\mochatests\\dbtest2.js",
+        "file": "\\dbtest2.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Connect to DB and Get Data",
+            "fullTitle": "DB Connection using windows AUTHENTICATION - Test Connect to DB and Get Data",
+            "timedOut": false,
+            "duration": 3772,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(15000);  //Increase timeout of response.\nsql.connect(config, function(err){\n    if(err){\n        console.log(\"Error while connecting database :- \" + err);\n        sql.close();\n    }\n    else {\n      console.log(\"Yes!!! Connected to My Database!!!!.... \" );\n        var request = new sql.Request();\n        request.query(query,function(err, result){\n            if(err){\n                console.log(\"Error while Executing Query :- \" + err);\n                res.send(err);\n            }\n            else{\n                console.log(\"Result = \"+result.recordset[0].number);\n                console.log(\"Result = \"+JSON.stringify(result));\n            }\n            sql.close();\n            done();\n        });\n    }\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ac9a0731-5581-49f4-af56-4aab42c43c53",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "ac9a0731-5581-49f4-af56-4aab42c43c53"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 3772,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "6646115b-08ab-432d-a5c8-7d183c75fd7f",
+        "title": "User Test",
+        "fullFile": "c:\\mochatests\\test5_api_get.js",
+        "file": "\\test5_api_get.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should return a 200 response",
+            "fullTitle": "User Test should return a 200 response",
+            "timedOut": false,
+            "duration": 1428,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(15000); //Increase timeout of response.\napi.get('/vgupta:Kabbage')\n\t.set('Accept', 'application/json')\n\t.expect(200, done);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "61909ea9-98af-43b9-ac93-a86c5b87356e",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "61909ea9-98af-43b9-ac93-a86c5b87356e"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1428,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "0349ab67-5067-4fd2-89e8-f0b5e2c4ba74",
+        "title": "Koala POST - Test",
+        "fullFile": "c:\\mochatests\\test6-api-post.js",
+        "file": "\\test6-api-post.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Post and Create Throwaway Account",
+            "fullTitle": "Koala POST - Test Post and Create Throwaway Account",
+            "timedOut": false,
+            "duration": 1382,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(15000);  //Increase timeout of response.\nconsole.log(\"koala_partner = \"+koala_partner);\nconsole.log(\"koala_username = \"+koala_username);\nlet data = {'groups': ['Kore-CSSupervisor']};\nconsole.log(\"INPUT BODY DATA = \"+JSON.stringify(data));\napi.post('/'+koala_partner+'/'+koala_username+'/account')\n.set('Accept', 'application/json')\n.send(data)\n.expect(201)\n.expect('Content-Type', /json/)\n// .expect('Created')\n.end(function(err, res) {\n      if (err) return done(err);\n      console.log(\"STATUS CODE = \" + res.statusCode);\n      console.log(\"ERROR = \" + err);\n      console.log(\"RESPONSE BODY = \" + JSON.stringify(res));\n      done();\n    });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e4d35b83-f10e-4656-87e7-c9340837a1ac",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e4d35b83-f10e-4656-87e7-c9340837a1ac"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1382,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "e35b561f-8396-48d5-8fe2-7dfe29a0a657",
+        "title": "Array",
+        "fullFile": "c:\\mochatests\\test1.js",
+        "file": "\\test1.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "7068d863-bb4a-493c-81a2-15b4cce3d675",
+            "title": "#indexOf()",
+            "fullFile": "c:\\mochatests\\test1.js",
+            "file": "\\test1.js",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [
+              {
+                "title": "should return -1 when the value is not present",
+                "fullTitle": "Array #indexOf() should return -1 when the value is not present",
+                "timedOut": false,
+                "duration": 0,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "assert.equal([1,2,3].indexOf(4), -1);",
+                "err": {},
+                "isRoot": false,
+                "uuid": "d658f719-860e-4bfc-8c85-f731c1c71a9b",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "This is second test",
+                "fullTitle": "Array #indexOf() This is second test",
+                "timedOut": false,
+                "duration": 7,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "console.log(\"2nd test!!!\");",
+                "err": {},
+                "isRoot": false,
+                "uuid": "25c37881-04c3-4058-a278-2c8f78a63708",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "d658f719-860e-4bfc-8c85-f731c1c71a9b",
+              "25c37881-04c3-4058-a278-2c8f78a63708"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 7,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "32236e3a-e2ca-41cd-a072-e261421de95d",
+        "title": "webdriver.io page",
+        "fullFile": "c:\\mochatests\\test1.js",
+        "file": "\\test1.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should have the right title - the fancy generator way",
+            "fullTitle": "webdriver.io page should have the right title - the fancy generator way",
+            "timedOut": false,
+            "duration": 0,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "wdio.browser.url('http://webdriver.io');\nvar title = browser.getTitle();\nassert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');",
+            "err": {
+              "message": "TypeError: Cannot read property 'url' of undefined",
+              "estack": "TypeError: Cannot read property 'url' of undefined\n    at Context.<anonymous> (test1.js:27:22)"
+            },
+            "isRoot": false,
+            "uuid": "74576545-116c-4890-b9ec-d6f289e590e4",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "74576545-116c-4890-b9ec-d6f289e590e4"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "3d4f388b-5794-4d14-9fe5-49afa6809374",
+        "title": "Generate Token Test",
+        "fullFile": "c:\\mochatests\\test7-generatePlrfm-token-api-post.js",
+        "file": "\\test7-generatePlrfm-token-api-post.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Post and Generate Pltform Token",
+            "fullTitle": "Generate Token Test Post and Generate Pltform Token",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(15000);  //Increase timeout of response.\nconsole.log(\"platform_client_id = \"+platform_client_id);\nconsole.log(\"platform_client_secret = \"+platform_client_secret);\nconsole.log(\"API = \"+JSON.stringify(api));\nvar storeToken;\nvar body = {\n  \"grant_type\": \"client_credentials\",\n  \"client_id\": platform_client_id,\n  \"client_secret\":platform_client_secret\n};\nconsole.log(\"Request Body = \"+JSON.stringify(body));\napi.post('/auth/token')\n.set('Content-Type', 'application/x-www-form-urlencoded')\n.send(body)\n.expect(200)\n.end(function(err, res) {\n      if (err) return done(err);\n      console.log(\"STATUS CODE = \" + res.statusCode);\n      console.log(\"ERROR = \" + err);\n      expect(res.body).to.have.property(\"access_token\");\n      console.log(\"RESPONSE Body = \"+JSON.stringify(res));\n      console.log(\"========================================\");\n      console.log(\"Token Only = \"+JSON.stringify(res.body.access_token));\n      console.log(\"========================================\");\n      done();\n    });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "298c9c9c-994d-4066-b5ee-80f831a80dff",
+            "isHook": false,
+            "skipped": true
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [
+          "298c9c9c-994d-4066-b5ee-80f831a80dff"
+        ],
+        "duration": null,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [
+      "f3de149c-73a5-4c70-9379-dacb3864878a"
+    ],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 1555,
+    "root": true,
+    "rootEmpty": false,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}

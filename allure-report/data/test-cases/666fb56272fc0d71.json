@@ -1,0 +1,51 @@
+{
+  "uid" : "666fb56272fc0d71",
+  "name" : "should have the right title - the fancy generator way",
+  "fullName" : "webdriver.io page.should have the right title - the fancy generator way",
+  "historyId" : "7a9edee3f041e5787eba05396558866b",
+  "time" : {
+    "start" : 1539852914213,
+    "stop" : 1539852914255,
+    "duration" : 42
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "util is not defined",
+  "statusTrace" : "ReferenceError: util is not defined\n                    at Context.<anonymous> (test5_api_get.js:40:35)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "webdriver.io page"
+  }, {
+    "name" : "testClass",
+    "value" : "webdriver.io page"
+  }, {
+    "name" : "testMethod",
+    "value" : "should have the right title - the fancy generator way"
+  }, {
+    "name" : "package",
+    "value" : "webdriver.io page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "666fb56272fc0d71.json",
+  "parameterValues" : [ ]
+}

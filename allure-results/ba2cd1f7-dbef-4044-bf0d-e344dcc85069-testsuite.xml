@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539852914201' stop='1539852914207'>
+    <name>Array #indexOf()</name>
+    <title>Array #indexOf()</title>
+    <test-cases>
+        <test-case start='1539852914201' status='passed' stop='1539852914203'>
+            <name>should return -1 when the value is not present</name>
+            <title>should return -1 when the value is not present</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1539852914203' status='passed' stop='1539852914207'>
+            <name>This is second test</name>
+            <title>This is second test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

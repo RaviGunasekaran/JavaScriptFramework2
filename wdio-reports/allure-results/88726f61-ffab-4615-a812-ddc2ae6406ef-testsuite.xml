@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539865845670' stop='1539865859212'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539865845670' status='broken' stop='1539865859211'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539865845674' status='passed' stop='1539865845709'>
+                    <name>POST /wd/hub/session/e687cdd6b2df0df75a76fbd9a4406030/url</name>
+                    <title>POST /wd/hub/session/e687cdd6b2df0df75a76fbd9a4406030/url</title>
+                    <attachments>
+                        <attachment title='Request' source='50e4d02a-e545-40e0-8351-ff4952890c73-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='7d7d8cb7-7255-47fb-8ba2-b3936028bfc8-attachment.json' type='application/json' size='584'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539865858119' status='passed' stop='1539865859196'>
+                    <name>POST /wd/hub/session/e687cdd6b2df0df75a76fbd9a4406030/url</name>
+                    <title>POST /wd/hub/session/e687cdd6b2df0df75a76fbd9a4406030/url</title>
+                    <attachments>
+                        <attachment title='Request' source='10b4a36a-1032-4762-b64d-ea9f000f5085-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='7f03e18d-89ec-481f-8c6c-220ee2e2466b-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539865859198' status='passed' stop='1539865859210'>
+                    <name>GET /wd/hub/session/e687cdd6b2df0df75a76fbd9a4406030/title</name>
+                    <title>GET /wd/hub/session/e687cdd6b2df0df75a76fbd9a4406030/title</title>
+                    <attachments>
+                        <attachment title='Response' source='d895883b-93c2-4356-996b-96fd40b223ba-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='21baf0e8-c879-4e7a-85b0-a1781226e553-attachment.json' type='application/json' size='592'/>
+                <attachment title='Response' source='bb417ad9-0b27-4e2d-8418-b131e13e7889-attachment.json' type='application/json' size='602'/>
+                <attachment title='Response' source='c375dbb6-3384-42ca-8180-17a59c5b4af4-attachment.json' type='application/json' size='584'/>
+                <attachment title='Response' source='e03cbc1b-cf60-4d6d-afc4-3eb4b35bd4fa-attachment.json' type='application/json' size='91'/>
+            </attachments>
+            <failure>
+                <message>assert is not defined</message>
+                <stack-trace>ReferenceError: assert is not defined
+                    at Object.getRegressionURL (c:\mochatests\Framework\Pages\KoreLoginPage.js:19:5)
+                    at Context.&lt;anonymous> (c:\mochatests\WebTests\BATS\KoreLoginTest.js:10:19)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (c:\mochatests\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (c:\mochatests\node_modules\wdio-sync\build\index.js:588:12)
+                    at c:\mochatests\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

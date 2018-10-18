@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539869363100' stop='1539869404534'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539869363100' status='passed' stop='1539869404533'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539869363104' status='passed' stop='1539869363160'>
+                    <name>POST /wd/hub/session/87360928ed6660d60002871dbae603ad/url</name>
+                    <title>POST /wd/hub/session/87360928ed6660d60002871dbae603ad/url</title>
+                    <attachments>
+                        <attachment title='Request' source='9b4b768c-fa8d-426c-b0e1-8187b5accc2a-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='45144f3b-27d6-43a5-bcce-c8feb8b5db2d-attachment.json' type='application/json' size='584'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869378315' status='passed' stop='1539869379463'>
+                    <name>POST /wd/hub/session/87360928ed6660d60002871dbae603ad/url</name>
+                    <title>POST /wd/hub/session/87360928ed6660d60002871dbae603ad/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e9d38853-c59b-4960-be53-f4125ded9e4c-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='1012f24d-baf0-4ac5-b002-ed1297b88a63-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539869379466' status='passed' stop='1539869379495'>
+                    <name>GET /wd/hub/session/87360928ed6660d60002871dbae603ad/title</name>
+                    <title>GET /wd/hub/session/87360928ed6660d60002871dbae603ad/title</title>
+                    <attachments>
+                        <attachment title='Response' source='31d71e33-2fcc-4d8c-8217-822af7cb883f-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='ca6d6989-dfa2-441b-a7d5-99244d2dc3f4-attachment.json' type='application/json' size='91'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

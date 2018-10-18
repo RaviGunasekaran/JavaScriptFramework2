@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539863688463' stop='1539863697777'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539863688464' status='broken' stop='1539863697777'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539863688468' status='passed' stop='1539863688503'>
+                    <name>POST /wd/hub/session/6c1c3af2b6a5a394422715a197d7906e/url</name>
+                    <title>POST /wd/hub/session/6c1c3af2b6a5a394422715a197d7906e/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f70f34b6-bfae-44d9-bc50-f6513a9cfc4d-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='a1b5590c-da40-44ae-beb4-4b09ea796b81-attachment.json' type='application/json' size='584'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539863696510' status='passed' stop='1539863697756'>
+                    <name>POST /wd/hub/session/6c1c3af2b6a5a394422715a197d7906e/url</name>
+                    <title>POST /wd/hub/session/6c1c3af2b6a5a394422715a197d7906e/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7339b8eb-718b-4655-b797-08df46676bf8-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='4889f676-bfc9-4dda-aff6-713f6591c80f-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539863697757' status='passed' stop='1539863697768'>
+                    <name>GET /wd/hub/session/6c1c3af2b6a5a394422715a197d7906e/title</name>
+                    <title>GET /wd/hub/session/6c1c3af2b6a5a394422715a197d7906e/title</title>
+                    <attachments>
+                        <attachment title='Response' source='d70186b5-c674-412c-93e2-f7b9631ffa40-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='dcfda325-2f7e-4605-990d-2e322cbad912-attachment.json' type='application/json' size='592'/>
+                <attachment title='Response' source='52ea6b1b-8805-4677-8b80-1bf6eec51911-attachment.json' type='application/json' size='584'/>
+                <attachment title='Response' source='e6056d83-e2c1-4616-a596-0882be82d575-attachment.json' type='application/json' size='602'/>
+                <attachment title='Response' source='e39d795c-5984-47c6-bd48-62fa7bc93d9a-attachment.json' type='application/json' size='91'/>
+            </attachments>
+            <failure>
+                <message>selector.slice is not a function</message>
+                <stack-trace>TypeError: selector.slice is not a function
+                    at click([object Object]) -     at c:\mochatests\node_modules\wdio-sync\build\at element([object Object]) - c:\mochatests\node_modules\webdriverio\build\lib\commands\click.js:12:17</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539865880836' stop='1539865902484'>
+    <name>Login with Existing User in Kore and Check DashBoard</name>
+    <title>Login with Existing User in Kore and Check DashBoard</title>
+    <test-cases>
+        <test-case start='1539865880837' status='broken' stop='1539865902483'>
+            <name>Login to Kore with Existing Username</name>
+            <title>Login to Kore with Existing Username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["c:\\mochatests\\WebTests\\BATS\\KoreLoginTest.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1539865880841' status='passed' stop='1539865880878'>
+                    <name>POST /wd/hub/session/ed5709588a47c0f9ccd621cb69981ffc/url</name>
+                    <title>POST /wd/hub/session/ed5709588a47c0f9ccd621cb69981ffc/url</title>
+                    <attachments>
+                        <attachment title='Request' source='3ca941a9-30ac-4425-9db8-60c793a22044-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='e1dc9411-e0af-4fbf-8fc0-e5d3cffb6359-attachment.json' type='application/json' size='584'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539865901287' status='passed' stop='1539865901322'>
+                    <name>POST /wd/hub/session/ed5709588a47c0f9ccd621cb69981ffc/url</name>
+                    <title>POST /wd/hub/session/ed5709588a47c0f9ccd621cb69981ffc/url</title>
+                    <attachments>
+                        <attachment title='Request' source='68623e28-b024-48eb-9fab-0a6ce6c01038-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='a04d2814-cc44-4159-b283-3be72d63ba89-attachment.json' type='application/json' size='602'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539865902445' status='passed' stop='1539865902468'>
+                    <name>GET /wd/hub/session/ed5709588a47c0f9ccd621cb69981ffc/title</name>
+                    <title>GET /wd/hub/session/ed5709588a47c0f9ccd621cb69981ffc/title</title>
+                    <attachments>
+                        <attachment title='Response' source='3482fe61-bc3d-4512-8c8f-0c342365ccf0-attachment.json' type='application/json' size='95'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='c106bb99-77c5-420d-a98b-34b61c21e2f8-attachment.json' type='application/json' size='584'/>
+                <attachment title='Response' source='68d0e18f-2a94-4c49-b711-245fd5181086-attachment.json' type='application/json' size='592'/>
+                <attachment title='Response' source='a2acf2cb-5a87-4002-a245-62a43eef7e56-attachment.json' type='application/json' size='91'/>
+                <attachment title='Response' source='72b0ee57-4415-442b-af56-72e462831e70-attachment.json' type='application/json' size='91'/>
+            </attachments>
+            <failure>
+                <message>Cannot read property 'ELEMENT' of null</message>
+                <stack-trace>TypeError: Cannot read property 'ELEMENT' of null
+                    at click("#username") -     at c:\mochatests\node_modules\wdio-sync\build\at element("#username") - c:\mochatests\node_modules\webdriverio\build\lib\commands\click.js:12:17</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
