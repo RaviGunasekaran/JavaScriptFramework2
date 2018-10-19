@@ -7,14 +7,18 @@ var throwawayUserCreation = require('../UserGenerators/ThrowawayUserCreation');
 var getDataFromDB = require('../../Framework/UserGenerators/GetDataFromDB');
 
 // Page Flows
-var koreLoginPage = Object.create(page,{
+var KoreLoginPage = Object.create(page,{
 
   /**
   * define or overwrite page methods
   */
  open: { value: function() {
-     page.open.call(this, 'https://kore-regression.kabbage.com');
+     page.open.call(this,'https://kore-regression.kabbage.com');
  } },
+ close: { value: function() {
+   page.close.call();
+ }
+},
 
     /**
       * define elements
@@ -23,6 +27,9 @@ var koreLoginPage = Object.create(page,{
      passwordTextBox: { get: function () { return $('#password'); } },
      loginSubmitButton: { get: function () { return $('#login-submit'); } },
      searchBoxInDashBoard: { get: function () { return $('#user-search-input'); } },
+     defaultAvatar: { get: function () { return $('.fa.fa-user.user-default-avatar'); } },
+     logoutLink: { get: function () { return $('a[href="/auth/logout/"]'); } },
+
 
   // Enter username Value
 enterValueInUserNameTextBox: { value: function(){
@@ -41,6 +48,7 @@ enterValueInUserNameTextBox: { value: function(){
 // Enter username Value from Data base
 enterValueInUserNameTextBoxFromDB: { value: function(){
 console.log("Clearing username TextBox...");
+browser.pause(10000);
 this.userNameTextBox.clearElement();
 this.userNameTextBox.click();
 console.log("Clicked username TextBox...");
@@ -77,6 +85,15 @@ validateKoreDashBoard: { value: function(){
     console.log("Yes!. Search Box is Displayed After Login!.. Login Success!!!");
   }
 }
+},
+// Signout from Kore
+signoutFromKore: { value: function(){
+  this.defaultAvatar.click();
+  console.log("Default Avatar Clicked...");
+  this.logoutLink.click();
+  console.log("LogoutLink Clicked...");
 }
+},
+
 });
-module.exports = koreLoginPage;
+module.exports = KoreLoginPage;
