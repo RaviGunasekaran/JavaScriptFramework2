@@ -13,7 +13,8 @@ const path = require('path')
      //Run Multiple SPecs
     // specs: [path.resolve(__dirname, 'test/specs/simple.js'),(__dirname, 'test/specs/koalaapitest.js')],
     // specs: [path.resolve(__dirname, 'test/specs/simple.js'),(__dirname,'WebTests/BATS/KoreLoginTest.js')],
-    specs: [path.resolve(__dirname,'WebTests/BATS/KoreLoginTest.js')],
+    specs: [path.resolve(__dirname,'KoreTests/BATS/KoreLoginTest.js')],
+    // specs: [path.resolve(__dirname,'test1.js')],
 
     /**
      * capabilities
@@ -39,7 +40,7 @@ const path = require('path')
   // },
     reporterOptions: {
       allure: {
-            outputDir: 'C:/mochatests/wdio-reports/allure-results'
+            outputDir: 'C:/mochatests/TestExecutionReports/wdio-reports/allure-results'
         }
    // outputDir: 'c:/mochatests/wdio_awasom_reports', //json file will be written to this directory
    // mochawesome_filename: 'wdio_awasom_reportsexecution_report.json', //will default to wdiomochawesome.json if no name is provided

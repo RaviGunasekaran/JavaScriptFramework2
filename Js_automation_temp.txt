@@ -1,0 +1,11 @@
+"test": "mocha dbtest2 test5_api_get test6-api-post test1 test7-generatePlrfm-token-api-post",
+    "pretest": "rmdir /s /q allure-results",
+	
+	mocha -- Modules/**/Tests/*.js
+	
+	
+	mocha -- c://mochatests//Framework//Utils//KoreConfigReader.js
+	
+	
+	mocha -- C://mochatests//KoreTests//BATS//KoreLoginTest.js
+	

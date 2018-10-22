@@ -2,8 +2,7 @@
   "requires": true,
   "lockfileVersion": 1,
   "scripts": {
-    "pretest": "rmdir /s /q allure-results",
-    "test": "mocha dbtest2 test5_api_get test6-api-post test1 test7-generatePlrfm-token-api-post",
+    "test": "mocha KoreLoginTest",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "dependencies": {
@@ -196,6 +195,7 @@
       "resolved": "https://registry.npmjs.org/pathval/-/pathval-1.1.0.tgz",
       "version": "1.1.0"
     },
+    "properties-reader": "0.0.16",
     "supertest": "^3.3.0",
     "supports-color": {
       "integrity": "sha512-zjaXglF5nnWpsq470jSv6P9DwPvgLkuapYmfDm3JWOm0vkNTVF2tI4UrN2r6jH1qM/uc/WtxYY1hYoA2dOKj5w==",
