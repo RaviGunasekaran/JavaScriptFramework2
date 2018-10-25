@@ -6,6 +6,11 @@ var assert = require('assert');
 //Import Required Pages
 var koreLoginPage = require('../../Framework/Pages/KorePages/KoreLoginPage');
 var getDataFromDB = require('../../Framework/DataGenerators/DataBaseHealpers/GetDataFromDB');
+var query = 'select top 1 UserName from customer.kuser order by bornondate';
+// getDataFromDB.connectToDB();
+// var getOneUserFromDBWithGivenQuery = getDataFromDB.getDatabaseResult(query,'UserName');
+var getOneUserFromDBWithGivenQuery = getDataFromDB.connectToDB();
+console.log("DB Status = "+getOneUserFromDBWithGivenQuery);
 
 beforeEach(function() {
     // runs before each test in this block
@@ -15,19 +20,19 @@ beforeEach(function() {
   afterEach(function() {
   // runs after each test in this block
 });
-
-describe ('Login with Existing User in Kore and Check DashBoard',function(){
-  it('Login to Kore with Existing Username', function(){
-    console.log("=== TEST1 ===");
-
-    koreLoginPage.enterValueInUserNameTextBox();
-    koreLoginPage.enterValueInPasswordTextBox();
-    koreLoginPage.clickSubmitButton();
-    koreLoginPage.validateKoreDashBoard();
-    koreLoginPage.signoutFromKore();
-    console.log("=== TEST1 ===");
-  });
-  });
+//
+// describe ('Login with Existing User in Kore and Check DashBoard',function(){
+//   it('Login to Kore with Existing Username', function(){
+//     console.log("=== TEST1 ===");
+//
+//     koreLoginPage.enterValueInUserNameTextBox();
+//     koreLoginPage.enterValueInPasswordTextBox();
+//     koreLoginPage.clickSubmitButton();
+//     koreLoginPage.validateKoreDashBoard();
+//     koreLoginPage.signoutFromKore();
+//     console.log("=== TEST1 ===");
+//   });
+//   });
 
 describe ('Get User from DataBase and search in Kore',function(){
   it('Login to Kore with User From DataBase ', function(){

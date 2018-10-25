@@ -5,6 +5,7 @@ var assert = require('assert');
 var page = require('../page');
 var throwawayUserCreation = require('../../../Framework/DataGenerators/APIHelpers/ThrowawayUserCreation');
 var getDataFromDB = require('../../../Framework/DataGenerators/DataBaseHealpers/GetDataFromDB');
+var query = 'select top 1 UserName from customer.kuser order by bornondate;';
 
 // Page Flows
 var KoreLoginPage = Object.create(page,{
@@ -51,6 +52,8 @@ console.log("Clearing username TextBox...");
 this.userNameTextBox.clearElement();
 this.userNameTextBox.click();
 console.log("Clicked username TextBox...");
+console.log("DB STATUS = "+getDataFromDB.connectToDB());
+console.log("QUARY STATUS = "+getDataFromDB.executeQuery(query));
 var newDBuser = getDataFromDB.getOneUserfromKUser();
 console.log("New DB User : "+newDBuser);
 this.userNameTextBox.setValue(newDBuser);
